@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue_600"
+    android:orientation="vertical"
+    android:id="@+id/main">
+
+    <!-- 名前入力 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvLabelInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@android:color/white"
+            android:text="@string/tv_msg"
+            android:textSize="24sp"/>
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@color/cream"
+            android:inputType="text"
+            android:textSize="32sp"/>
+
+    </LinearLayout>
+
+    <!-- メニュー選択 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="16dp"
+        android:background="@color/orange"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbDrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:padding="4dp"
+            android:background="@color/white"
+            android:text="@string/cb_drink"
+            android:textSize="24sp"/>
+
+        <CheckBox
+            android:id="@+id/cbFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:padding="4dp"
+            android:background="@color/white"
+            android:text="@string/cb_food"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <!-- 性別選択 -->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="16dp"
+        android:background="@color/orange"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:padding="4dp"
+            android:background="@color/white"
+            android:text="@string/rb_male"
+            android:textSize="24sp"/>
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:padding="4dp"
+            android:background="@color/white"
+            android:text="@string/rb_female"
+            android:textSize="24sp"/>
+
+    </RadioGroup>
+
+    <!-- フード: カレーリスト選択 -->
+    <Spinner
+        android:id="@+id/spCurryList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:padding="8dp"
+        android:spinnerMode="dialog"
+        android:background="@color/white"
+        android:entries="@array/sp_curryList" />
+
+    <!-- 確定ボタン -->
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:textSize="32sp"
+        android:text="@string/bt_save" />
+
+    <!-- ドリンク: カクテル選択 -->
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/white"
+        android:entries="@array/lv_cocktailList"/>
+
+</LinearLayout>
