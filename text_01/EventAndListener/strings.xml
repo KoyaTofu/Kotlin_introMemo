@@ -1,0 +1,11 @@
+<resources>
+    <!-- xml ファイル -->
+    <string name="app_name">イベント＆リスナ</string>
+    <string name="tv_name">お名前を入力してください</string>
+    <string name="bt_click">表示</string>
+    <string name="bt_clear">クリア</string>
+
+    <!-- Activity ファイル -->
+    <string name="msg_greeting">Hello</string>
+    <string name="request_name">エラー：\n名前を入力してください!</string>
+</resources>
